@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="destination.html" method="GET">
+        <fieldset>
+            <legend>Detalii personale</legend>
+            <label for="name">Username: </label>
+            <input type="text" name="username" id="name" required autofocus placeholder="Username" pattern="[a-zA-Z]{3,}" title="Mai mult de 3 litere,va rog!">
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" required placeholder="Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-z]{2,}" title="Exemplu@yahoo.com">
+            <label for="phone">Telefon:</label>
+            <input type="tel" name="phone" id="phone" required placeholder="Numarul de telefon" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="xxxx xxx xxx">
+            <label for="tara">Alegeti tara:</label>
+            <select name="country" required id="tara">
+                <option value=""></option>
+                <option value="RO">RO</option>
+                <option value="UK">UK</option>
+                <option value="US">US</option>
+            </select>
+
+            <br>
+            <br>
+            <fieldset>
+                <legend>Detalii de cazare</legend>
+                <label for="date">Data cazarii</label>
+                <input id="date" type="date" name="date" min="2021-07-21">
+                <label for="numberofClients">Numarul de persone? </label>
+                <input id="numberofClients" type="number" name="numberofClients" min="1" max="4">
+                <p>Doriti sa aveti mese zilnice? </p>
+                <label for="yes">Da:</label>
+                <input id="yes" type="radio" name="meals" value="yesMeals">
+                <label for="no">Nu: </label>
+                <input id="no" type="radio" name="meals" value="noMeals">
+                <br>
+                <label for="balcony">Bifati daca doriti balcon:</label>
+                <input id="balcony" type="checkbox" name="balcony" value="yes" checked>
+                <br>
+                <br>
+                <label for="button">Apasa aici -> </label>
+                <input id="button" type="image" src="button.png" width="30px" height="30px" alt="Submit">
+            </fieldset>
+        
+        
+        
+        </fieldset>
+    </form>
+</body>
+</html>
